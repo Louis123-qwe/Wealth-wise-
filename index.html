@@ -1,0 +1,1671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- ═══════════════════════════════════════════
+     PRIMARY META / SEO
+════════════════════════════════════════════ -->
+<title>WealthWise — Student Finance Tracker | Manage Your Money Smartly</title>
+<meta name="description" content="WealthWise is a free student finance tracker app. Track income, expenses, bank accounts, budgets and goals. Beautiful dashboards, smart analytics and downloadable reports — all in one place.">
+<meta name="keywords" content="student finance tracker, budget app, expense tracker, income tracker, money management, bank account tracker, financial goals, budget planner, WealthWise, Nigeria finance app, student budget">
+<meta name="author" content="WealthWise">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1a4a2e">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="WealthWise">
+<meta name="application-name" content="WealthWise">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://wealth-wise-sigma.vercel.app/">
+
+<!-- ═══════════════════════════════════════════
+     OPEN GRAPH (Facebook / LinkedIn / WhatsApp)
+════════════════════════════════════════════ -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wealth-wise-sigma.vercel.app/">
+<meta property="og:title" content="WealthWise — Student Finance Tracker">
+<meta property="og:description" content="Track your income, expenses, bank accounts and budget goals with WealthWise. Free, beautiful and built for students.">
+<meta property="og:image" content="https://wealth-wise-sigma.vercel.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="WealthWise — Student Finance Tracker Dashboard">
+<meta property="og:site_name" content="WealthWise">
+<meta property="og:locale" content="en_NG">
+
+<!-- ═══════════════════════════════════════════
+     TWITTER CARD
+════════════════════════════════════════════ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://wealth-wise-sigma.vercel.app/">
+<meta name="twitter:title" content="WealthWise — Student Finance Tracker">
+<meta name="twitter:description" content="Track your income, expenses, bank accounts and budget goals with WealthWise. Free, beautiful and built for students.">
+<meta name="twitter:image" content="https://wealth-wise-sigma.vercel.app/og-image.png">
+<meta name="twitter:image:alt" content="WealthWise — Student Finance Tracker">
+
+<!-- ═══════════════════════════════════════════
+     PWA MANIFEST & ICONS
+════════════════════════════════════════════ -->
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a4a2e'/%3E%3Cpath d='M16 44 C16 44 22 28 32 32 C42 36 48 20 48 20' stroke='%23a8d5b5' stroke-width='3.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='32' r='4' fill='%233d8f5f'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='40' fill='%231a4a2e'/%3E%3Cpath d='M40 124 C40 124 62 74 90 86 C118 98 140 50 140 50' stroke='%23a8d5b5' stroke-width='10' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='90' cy='90' r='12' fill='%233d8f5f'/%3E%3C/svg%3E">
+
+<!-- ═══════════════════════════════════════════
+     STRUCTURED DATA (JSON-LD)
+════════════════════════════════════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "WealthWise",
+  "description": "A free student finance tracker app for managing income, expenses, bank accounts, budgets and financial goals.",
+  "url": "https://wealth-wise-sigma.vercel.app/",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web, Android, iOS",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "featureList": [
+    "Bank account tracking",
+    "Income & expense recording",
+    "Budget goal planning",
+    "Financial analytics",
+    "Downloadable CSV reports",
+    "Multi-currency support"
+  ],
+  "screenshot": "https://wealth-wise-sigma.vercel.app/og-image.png",
+  "creator": {
+    "@type": "Organization",
+    "name": "WealthWise"
+  }
+}
+</script>
+
+<!-- ═══════════════════════════════════════════
+     FONTS & ICONS
+════════════════════════════════════════════ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+  :root {
+    --forest: #1a4a2e;
+    --forest-mid: #2d6e47;
+    --forest-light: #3d8f5f;
+    --forest-pale: #a8d5b5;
+    --forest-ghost: #e8f5ee;
+    --white: #ffffff;
+    --off-white: #f7faf8;
+    --text-dark: #0d2318;
+    --text-mid: #3a5a47;
+    --text-muted: #7a9e8a;
+    --border: #d0e8d9;
+    --danger: #c0392b;
+    --danger-light: #fdecea;
+    --warning: #d4870a;
+    --warning-light: #fef3e2;
+    --success: #1a7a4a;
+    --success-light: #e8f5ee;
+    --shadow-sm: 0 2px 8px rgba(26,74,46,0.08);
+    --shadow-md: 0 8px 24px rgba(26,74,46,0.12);
+    --shadow-lg: 0 20px 60px rgba(26,74,46,0.18);
+    --radius: 14px;
+    --radius-sm: 8px;
+    --radius-lg: 20px;
+    --transition: 0.25s cubic-bezier(0.4,0,0.2,1);
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--off-white);
+    color: var(--text-dark);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* ── PWA INSTALL BANNER ─────────────────────── */
+  #pwa-banner {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--forest);
+    color: var(--white);
+    padding: 14px 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    z-index: 9998;
+    align-items: center;
+    gap: 14px;
+    max-width: 380px;
+    width: calc(100% - 40px);
+    animation: slideUp 0.4s ease;
+  }
+  #pwa-banner.show { display: flex; }
+  .pwa-banner-text { flex: 1; }
+  .pwa-banner-text strong { display: block; font-size: 14px; margin-bottom: 2px; }
+  .pwa-banner-text span { font-size: 12px; opacity: 0.75; }
+  .pwa-install-btn {
+    background: var(--forest-pale);
+    color: var(--forest);
+    border: none;
+    padding: 8px 16px;
+    border-radius: var(--radius-sm);
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .pwa-dismiss-btn {
+    background: none;
+    border: none;
+    color: rgba(255,255,255,0.5);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 4px;
+  }
+
+  /* ── OFFLINE BANNER ─────────────────────────── */
+  #offline-banner {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: var(--warning);
+    color: var(--white);
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    z-index: 9997;
+  }
+  #offline-banner.show { display: block; }
+
+  /* ── SPINNER ─────────────────────────────────── */
+  .spinner-overlay {
+    position: fixed; inset: 0;
+    background: rgba(26,74,46,0.92);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 9999;
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.3s;
+  }
+  .spinner-overlay.active { opacity:1; pointer-events:all; }
+  .spinner-ring {
+    width: 56px; height: 56px;
+    border: 4px solid rgba(255,255,255,0.2);
+    border-top-color: var(--white);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  .spinner-text { color: var(--white); margin-top: 16px; font-size: 14px; font-weight: 500; letter-spacing: 0.5px; }
+  .spinner-wrap { display:flex; flex-direction:column; align-items:center; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @keyframes slideUp { from { opacity:0; transform: translate(-50%, 20px); } to { opacity:1; transform: translate(-50%, 0); } }
+
+  /* ── SVG/CSS LOGO COMPONENT ──────────────────── */
+  .ww-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    user-select: none;
+  }
+  .ww-logo-mark {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+  .ww-logo-mark svg {
+    width: 100%;
+    height: 100%;
+  }
+  .ww-logo-text-block {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+  }
+  .ww-logo-wordmark {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--forest);
+    letter-spacing: -0.3px;
+  }
+  .ww-logo-wordmark .accent { color: var(--forest-light); }
+  .ww-logo-tagline {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-top: 2px;
+  }
+  /* Auth / sidebar variant — white version */
+  .ww-logo.inverted .ww-logo-wordmark { color: var(--white); }
+  .ww-logo.inverted .ww-logo-wordmark .accent { color: var(--forest-pale); }
+  .ww-logo.inverted .ww-logo-tagline { color: rgba(255,255,255,0.45); }
+
+  /* ── AUTH SCREENS ─────────────────────────────── */
+  .auth-screen {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, var(--forest) 0%, #0d2318 60%, #1a3d2a 100%);
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .auth-screen::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='28'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .auth-screen::after {
+    content: '';
+    position: absolute;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(61,143,95,0.15) 0%, transparent 70%);
+    top: -200px; right: -200px;
+    pointer-events: none;
+  }
+  .auth-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 48px 40px;
+    width: 100%;
+    max-width: 440px;
+    box-shadow: var(--shadow-lg), 0 0 0 1px rgba(255,255,255,0.1);
+    position: relative;
+    z-index: 1;
+    animation: slideUpCard 0.5s ease;
+  }
+  @keyframes slideUpCard { from { opacity:0; transform: translateY(30px); } to { opacity:1; transform: translateY(0); } }
+  .auth-logo-wrap { margin-bottom: 32px; }
+  .auth-title { font-family: 'Playfair Display', serif; font-size: 28px; color: var(--text-dark); margin-bottom: 6px; }
+  .auth-subtitle { color: var(--text-muted); font-size: 14px; margin-bottom: 32px; }
+
+  .form-group { margin-bottom: 20px; }
+  .form-label { display: block; font-size: 13px; font-weight: 600; color: var(--text-mid); margin-bottom: 8px; letter-spacing: 0.3px; }
+  .form-control {
+    width: 100%; padding: 13px 16px;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-family: 'DM Sans', sans-serif; font-size: 15px;
+    color: var(--text-dark); background: var(--off-white);
+    transition: var(--transition); outline: none;
+  }
+  .form-control:focus { border-color: var(--forest-light); background: var(--white); box-shadow: 0 0 0 3px rgba(61,143,95,0.12); }
+  .form-control::placeholder { color: var(--text-muted); }
+  .input-icon-wrap { position: relative; }
+  .input-icon-wrap .form-control { padding-left: 44px; }
+  .input-icon-wrap i { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 15px; }
+
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    gap: 8px; padding: 13px 24px; border: none;
+    border-radius: var(--radius-sm);
+    font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 600;
+    cursor: pointer; transition: var(--transition); text-decoration: none; white-space: nowrap;
+  }
+  .btn-primary { background: linear-gradient(135deg, var(--forest-light), var(--forest)); color: var(--white); width: 100%; box-shadow: 0 4px 16px rgba(26,74,46,0.25); }
+  .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(26,74,46,0.35); }
+  .btn-primary:active { transform: translateY(0); }
+  .btn-outline { background: transparent; border: 1.5px solid var(--border); color: var(--text-mid); }
+  .btn-outline:hover { border-color: var(--forest-light); color: var(--forest); background: var(--forest-ghost); }
+  .btn-danger { background: var(--danger); color: var(--white); }
+  .btn-sm { padding: 8px 16px; font-size: 13px; }
+  .btn-icon { padding: 8px 10px; border-radius: var(--radius-sm); }
+
+  .auth-switch { text-align: center; margin-top: 24px; font-size: 14px; color: var(--text-muted); }
+  .auth-switch a { color: var(--forest-light); font-weight: 600; text-decoration: none; cursor: pointer; }
+  .auth-switch a:hover { color: var(--forest); }
+
+  .error-msg { background: var(--danger-light); color: var(--danger); padding: 10px 14px; border-radius: var(--radius-sm); font-size: 13px; margin-bottom: 16px; border-left: 3px solid var(--danger); display: none; }
+  .error-msg.show { display: block; }
+
+  /* ── MAIN APP ─────────────────────────────────── */
+  #app { display: none; }
+
+  /* SIDEBAR */
+  .sidebar {
+    position: fixed; left: 0; top: 0; bottom: 0; width: 260px;
+    background: linear-gradient(180deg, var(--forest) 0%, #0d2318 100%);
+    z-index: 100; display: flex; flex-direction: column;
+    transition: transform var(--transition);
+    box-shadow: 4px 0 24px rgba(0,0,0,0.15);
+  }
+  .sidebar-logo { padding: 24px 20px 20px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .sidebar-nav { flex: 1; padding: 20px 12px; overflow-y: auto; }
+  .nav-section-label { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.3); padding: 12px 12px 6px; }
+  .nav-item { display: flex; align-items: center; gap: 12px; padding: 11px 14px; border-radius: 10px; color: rgba(255,255,255,0.65); font-size: 14px; font-weight: 500; cursor: pointer; transition: var(--transition); margin-bottom: 2px; }
+  .nav-item i { width: 18px; text-align: center; font-size: 15px; }
+  .nav-item:hover { background: rgba(255,255,255,0.07); color: var(--white); }
+  .nav-item.active { background: rgba(61,143,95,0.25); color: var(--forest-pale); border-left: 3px solid var(--forest-pale); padding-left: 11px; }
+  .sidebar-user { padding: 16px 20px; border-top: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; gap: 10px; }
+  .user-avatar { width: 36px; height: 36px; background: linear-gradient(135deg, var(--forest-light), var(--forest-pale)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; color: var(--white); flex-shrink: 0; }
+  .user-info { flex: 1; min-width: 0; }
+  .user-name { font-size: 13px; font-weight: 600; color: var(--white); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .user-email { font-size: 11px; color: rgba(255,255,255,0.4); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .logout-btn { background: none; border: none; color: rgba(255,255,255,0.4); cursor: pointer; padding: 4px; border-radius: 6px; transition: var(--transition); font-size: 14px; }
+  .logout-btn:hover { color: var(--white); background: rgba(255,255,255,0.08); }
+
+  /* MAIN CONTENT */
+  .main-content { margin-left: 260px; min-height: 100vh; display: flex; flex-direction: column; }
+  .topbar { background: var(--white); border-bottom: 1px solid var(--border); padding: 18px 32px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 50; box-shadow: var(--shadow-sm); }
+  .topbar-title { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--forest); }
+  .topbar-right { display: flex; align-items: center; gap: 12px; }
+  .date-badge { font-size: 13px; color: var(--text-muted); background: var(--forest-ghost); padding: 6px 14px; border-radius: 20px; font-family: 'DM Mono', monospace; font-weight: 500; }
+  .page-content { flex: 1; padding: 32px; max-width: 1200px; width: 100%; }
+
+  /* TABS */
+  .tab-page { display: none; }
+  .tab-page.active { display: block; animation: fadeIn 0.3s ease; }
+  @keyframes fadeIn { from { opacity:0; transform: translateY(8px); } to { opacity:1; transform:translateY(0); } }
+
+  /* CARDS */
+  .card { background: var(--white); border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow-sm); overflow: hidden; }
+  .card-header { padding: 20px 24px 16px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .card-title { font-family: 'Playfair Display', serif; font-size: 17px; color: var(--forest); }
+  .card-body { padding: 24px; }
+
+  /* STAT CARDS */
+  .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-bottom: 28px; }
+  .stat-card { background: var(--white); border-radius: var(--radius); padding: 24px; border: 1px solid var(--border); box-shadow: var(--shadow-sm); position: relative; overflow: hidden; transition: var(--transition); }
+  .stat-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+  .stat-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--forest-light), var(--forest-pale)); }
+  .stat-card.danger::before { background: linear-gradient(90deg, var(--danger), #e57373); }
+  .stat-card.warning::before { background: linear-gradient(90deg, var(--warning), #f0b54a); }
+  .stat-icon { width: 44px; height: 44px; border-radius: 12px; background: var(--forest-ghost); display: flex; align-items: center; justify-content: center; font-size: 18px; color: var(--forest); margin-bottom: 16px; }
+  .stat-card.danger .stat-icon { background: var(--danger-light); color: var(--danger); }
+  .stat-card.warning .stat-icon { background: var(--warning-light); color: var(--warning); }
+  .stat-label { font-size: 12px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 6px; }
+  .stat-value { font-family: 'DM Mono', monospace; font-size: 26px; font-weight: 500; color: var(--text-dark); line-height: 1; }
+  .stat-change { font-size: 12px; color: var(--text-muted); margin-top: 6px; }
+  .stat-change.up { color: var(--success); }
+  .stat-change.down { color: var(--danger); }
+
+  /* GRID */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px; }
+  .analytics-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 24px; }
+
+  /* BANK CARDS */
+  .bank-cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 28px; }
+  .bank-card { background: linear-gradient(135deg, var(--forest) 0%, var(--forest-mid) 100%); border-radius: var(--radius); padding: 24px; color: var(--white); position: relative; overflow: hidden; cursor: pointer; transition: var(--transition); box-shadow: var(--shadow-md); }
+  .bank-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+  .bank-card::after { content: ''; position: absolute; right: -30px; top: -30px; width: 120px; height: 120px; background: rgba(255,255,255,0.06); border-radius: 50%; }
+  .bank-card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; }
+  .bank-card-name { font-size: 15px; font-weight: 600; opacity: 0.9; }
+  .bank-card-type { font-size: 11px; background: rgba(255,255,255,0.15); padding: 3px 10px; border-radius: 20px; letter-spacing: 0.5px; }
+  .bank-card-balance { font-family: 'DM Mono', monospace; font-size: 30px; font-weight: 500; margin-bottom: 8px; }
+  .bank-card-label { font-size: 11px; opacity: 0.6; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 20px; }
+  .bank-card-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 14px; }
+  .bank-card-income { font-size: 12px; opacity: 0.7; }
+  .bank-card-income span { font-weight: 600; opacity: 1; }
+  .bank-card-actions { display: flex; gap: 6px; }
+  .bank-action-btn { background: rgba(255,255,255,0.12); border: none; color: var(--white); padding: 6px 8px; border-radius: 6px; cursor: pointer; font-size: 12px; transition: var(--transition); }
+  .bank-action-btn:hover { background: rgba(255,255,255,0.22); }
+  .add-bank-card { background: var(--forest-ghost); border: 2px dashed var(--forest-pale); border-radius: var(--radius); padding: 24px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px; cursor: pointer; transition: var(--transition); min-height: 180px; }
+  .add-bank-card:hover { border-color: var(--forest-light); }
+  .add-bank-card i { font-size: 28px; color: var(--forest-mid); }
+  .add-bank-card p { font-size: 14px; font-weight: 500; color: var(--forest-mid); }
+
+  /* TRANSACTIONS */
+  .tx-list { list-style: none; }
+  .tx-item { display: flex; align-items: center; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--border); transition: var(--transition); }
+  .tx-item:last-child { border-bottom: none; }
+  .tx-item:hover { background: var(--off-white); margin: 0 -24px; padding: 14px 24px; border-radius: var(--radius-sm); }
+  .tx-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 15px; flex-shrink: 0; }
+  .tx-icon.income { background: var(--success-light); color: var(--success); }
+  .tx-icon.expense { background: var(--danger-light); color: var(--danger); }
+  .tx-info { flex: 1; min-width: 0; }
+  .tx-narration { font-size: 14px; font-weight: 500; color: var(--text-dark); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .tx-meta { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+  .tx-amount { font-family: 'DM Mono', monospace; font-size: 15px; font-weight: 500; white-space: nowrap; }
+  .tx-amount.income { color: var(--success); }
+  .tx-amount.expense { color: var(--danger); }
+
+  /* MODAL */
+  .modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.5); backdrop-filter: blur(4px); z-index: 200; display: flex; align-items: center; justify-content: center; padding: 20px; opacity: 0; pointer-events: none; transition: opacity 0.25s; }
+  .modal-backdrop.active { opacity: 1; pointer-events: all; }
+  .modal { background: var(--white); border-radius: var(--radius-lg); width: 100%; max-width: 500px; box-shadow: var(--shadow-lg); transform: scale(0.95) translateY(20px); transition: transform 0.25s ease; max-height: 90vh; overflow-y: auto; }
+  .modal-backdrop.active .modal { transform: scale(1) translateY(0); }
+  .modal-header { padding: 24px 28px 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
+  .modal-title { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--forest); }
+  .modal-close { background: none; border: none; color: var(--text-muted); font-size: 18px; cursor: pointer; padding: 4px 8px; border-radius: 6px; transition: var(--transition); }
+  .modal-close:hover { background: var(--forest-ghost); color: var(--forest); }
+  .modal-body { padding: 28px; }
+  .modal-footer { padding: 16px 28px 24px; display: flex; gap: 10px; justify-content: flex-end; }
+
+  /* FORM */
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-select { width: 100%; padding: 13px 16px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: 'DM Sans', sans-serif; font-size: 15px; color: var(--text-dark); background: var(--off-white); cursor: pointer; outline: none; transition: var(--transition); appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237a9e8a' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; }
+  .form-select:focus { border-color: var(--forest-light); box-shadow: 0 0 0 3px rgba(61,143,95,0.12); }
+  .radio-group { display: flex; gap: 10px; }
+  .radio-option { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 11px 14px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); cursor: pointer; font-size: 14px; font-weight: 500; transition: var(--transition); color: var(--text-muted); }
+  .radio-option input { display: none; }
+  .radio-option.income-opt.selected { border-color: var(--success); background: var(--success-light); color: var(--success); }
+  .radio-option.expense-opt.selected { border-color: var(--danger); background: var(--danger-light); color: var(--danger); }
+
+  /* CHARTS */
+  .bar-chart { display: flex; align-items: flex-end; gap: 8px; height: 160px; padding: 0 16px; width: 100%; }
+  .bar-wrap { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 6px; height: 100%; justify-content: flex-end; }
+  .bar { width: 100%; border-radius: 6px 6px 0 0; transition: height 0.6s cubic-bezier(0.4,0,0.2,1); min-height: 4px; cursor: pointer; }
+  .bar.income { background: linear-gradient(180deg, var(--forest-light), var(--forest)); }
+  .bar.expense { background: linear-gradient(180deg, #e57373, var(--danger)); }
+  .bar-label { font-size: 10px; color: var(--text-muted); }
+  .donut-wrap { display: flex; align-items: center; justify-content: center; gap: 24px; padding: 20px; }
+  .donut-svg { width: 120px; height: 120px; }
+  .donut-legend { display: flex; flex-direction: column; gap: 10px; }
+  .legend-item { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+  .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+
+  /* BUDGET */
+  .budget-item { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 24px; margin-bottom: 14px; transition: var(--transition); }
+  .budget-item:hover { box-shadow: var(--shadow-sm); }
+  .budget-item-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 14px; }
+  .budget-item-name { font-weight: 600; font-size: 15px; color: var(--text-dark); }
+  .budget-item-target { font-family: 'DM Mono', monospace; font-size: 13px; color: var(--text-muted); }
+  .budget-items-list { margin: 12px 0; }
+  .budget-sub-item { display: flex; justify-content: space-between; padding: 8px 12px; background: var(--off-white); border-radius: var(--radius-sm); margin-bottom: 6px; font-size: 13px; }
+  .budget-sub-name { color: var(--text-mid); }
+  .budget-sub-price { font-family: 'DM Mono', monospace; font-weight: 500; }
+  .progress-bar-wrap { margin-top: 12px; }
+  .progress-label { display: flex; justify-content: space-between; font-size: 12px; color: var(--text-muted); margin-bottom: 6px; }
+  .progress-bar-bg { height: 8px; background: var(--forest-ghost); border-radius: 20px; overflow: hidden; }
+  .progress-bar-fill { height: 100%; border-radius: 20px; background: linear-gradient(90deg, var(--forest-light), var(--forest)); transition: width 0.8s cubic-bezier(0.4,0,0.2,1); }
+  .progress-bar-fill.danger { background: linear-gradient(90deg, var(--danger), #e57373); }
+  .progress-bar-fill.warning { background: linear-gradient(90deg, var(--warning), #f0b54a); }
+  .budget-total-row { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; background: var(--forest-ghost); border-radius: var(--radius-sm); margin-top: 10px; font-weight: 600; font-size: 14px; color: var(--forest); }
+  .budget-total-amount { font-family: 'DM Mono', monospace; font-size: 16px; }
+  #budget-items-form .budget-form-item { display: flex; gap: 10px; margin-bottom: 10px; align-items: flex-start; }
+
+  /* REPORT */
+  .report-filters { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px; align-items: flex-end; }
+  .filter-group { display: flex; flex-direction: column; gap: 6px; }
+  .filter-label { font-size: 12px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+  .report-table { width: 100%; border-collapse: collapse; }
+  .report-table th { background: var(--forest-ghost); padding: 11px 16px; text-align: left; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--forest); border-bottom: 2px solid var(--border); }
+  .report-table td { padding: 12px 16px; font-size: 14px; border-bottom: 1px solid var(--border); color: var(--text-dark); }
+  .report-table tr:hover td { background: var(--off-white); }
+  .report-table .income-cell { color: var(--success); font-weight: 600; font-family: 'DM Mono', monospace; }
+  .report-table .expense-cell { color: var(--danger); font-weight: 600; font-family: 'DM Mono', monospace; }
+  .report-table tfoot td { font-weight: 700; background: var(--forest-ghost); font-family: 'DM Mono', monospace; }
+
+  /* MISC */
+  .empty-state { text-align: center; padding: 48px 24px; color: var(--text-muted); }
+  .empty-state i { font-size: 40px; margin-bottom: 14px; color: var(--forest-pale); display: block; }
+  .empty-state p { font-size: 15px; }
+  .tag { display: inline-flex; align-items: center; padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 600; letter-spacing: 0.3px; }
+  .tag-income { background: var(--success-light); color: var(--success); }
+  .tag-expense { background: var(--danger-light); color: var(--danger); }
+  .badge { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 20px; font-size: 11px; font-weight: 700; }
+  .badge-green { background: var(--success-light); color: var(--success); }
+  .badge-red { background: var(--danger-light); color: var(--danger); }
+
+  /* TOAST */
+  .toast { position: fixed; bottom: 24px; right: 24px; background: var(--forest); color: var(--white); padding: 14px 20px; border-radius: var(--radius-sm); font-size: 14px; font-weight: 500; box-shadow: var(--shadow-lg); z-index: 9999; transform: translateY(100px); opacity: 0; transition: transform 0.3s ease, opacity 0.3s ease; display: flex; align-items: center; gap: 10px; min-width: 240px; }
+  .toast.show { transform: translateY(0); opacity: 1; }
+  .toast.success { background: var(--success); }
+  .toast.error { background: var(--danger); }
+
+  /* MOBILE */
+  .mobile-menu-btn { display: none; background: none; border: none; font-size: 20px; color: var(--forest); cursor: pointer; padding: 4px; }
+  .sidebar-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 99; }
+
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--forest-pale); border-radius: 3px; }
+
+  @media (max-width: 900px) {
+    .sidebar { transform: translateX(-100%); }
+    .sidebar.open { transform: translateX(0); }
+    .sidebar-overlay { display: block; pointer-events: none; opacity: 0; transition: opacity 0.3s; }
+    .sidebar-overlay.visible { opacity: 1; pointer-events: all; }
+    .main-content { margin-left: 0; }
+    .mobile-menu-btn { display: flex; }
+    .grid-2, .analytics-grid { grid-template-columns: 1fr; }
+    .page-content { padding: 20px 16px; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .form-row { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .stats-grid { grid-template-columns: 1fr; }
+    .bank-cards-grid { grid-template-columns: 1fr; }
+    .auth-card { padding: 32px 24px; }
+    .topbar { padding: 14px 16px; }
+    .report-filters { flex-direction: column; }
+    .report-filters .filter-group { width: 100%; }
+    .report-filters .filter-group .form-select,
+    .report-filters .filter-group .form-control { width: 100%; }
+  }
+
+  /* Safe area for PWA on iOS */
+  @supports (padding: env(safe-area-inset-bottom)) {
+    .topbar { padding-top: calc(18px + env(safe-area-inset-top)); }
+    .toast { bottom: calc(24px + env(safe-area-inset-bottom)); }
+    #pwa-banner { bottom: calc(80px + env(safe-area-inset-bottom)); }
+  }
+</style>
+</head>
+<body>
+
+<!-- OFFLINE BANNER -->
+<div id="offline-banner"><i class="fas fa-wifi-slash"></i> You're offline — some features may be unavailable</div>
+
+<!-- PWA INSTALL BANNER -->
+<div id="pwa-banner">
+  <!-- Logo mark inline -->
+  <svg width="36" height="36" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;">
+    <rect width="64" height="64" rx="14" fill="rgba(255,255,255,0.15)"/>
+    <path d="M14 46 C14 46 22 24 32 30 C42 36 50 14 50 14" stroke="#a8d5b5" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="32" cy="30" r="5" fill="#3d8f5f"/>
+    <circle cx="50" cy="14" r="3.5" fill="#a8d5b5"/>
+  </svg>
+  <div class="pwa-banner-text">
+    <strong>Add WealthWise to Home Screen</strong>
+    <span>Track finances faster — works offline too</span>
+  </div>
+  <button class="pwa-install-btn" id="pwa-install-btn">Install</button>
+  <button class="pwa-dismiss-btn" id="pwa-dismiss-btn"><i class="fas fa-times"></i></button>
+</div>
+
+<!-- SPINNER -->
+<div class="spinner-overlay" id="spinner">
+  <div class="spinner-wrap">
+    <div class="spinner-ring"></div>
+    <p class="spinner-text">Please wait...</p>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <i class="fas fa-check-circle"></i>
+  <span id="toast-msg">Saved successfully</span>
+</div>
+
+<!-- ══════════════ AUTH ══════════════ -->
+<div id="auth-screen">
+  <!-- LOGIN -->
+  <div class="auth-screen" id="login-screen">
+    <div class="auth-card">
+      <div class="auth-logo-wrap">
+        <!-- SVG Logo Mark -->
+        <div class="ww-logo">
+          <div class="ww-logo-mark">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-label="WealthWise logo mark">
+              <defs>
+                <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#3d8f5f"/>
+                  <stop offset="100%" stop-color="#1a4a2e"/>
+                </linearGradient>
+                <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#a8d5b5"/>
+                  <stop offset="100%" stop-color="#5aad7c"/>
+                </linearGradient>
+              </defs>
+              <rect width="64" height="64" rx="16" fill="url(#bgGrad)"/>
+              <!-- Candlestick/growth line -->
+              <path d="M12 48 C12 48 22 26 32 32 C42 38 52 12 52 12"
+                stroke="url(#lineGrad)" stroke-width="3.5" fill="none"
+                stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- Dot at peak -->
+              <circle cx="52" cy="12" r="4" fill="#a8d5b5"/>
+              <!-- Dot at valley -->
+              <circle cx="32" cy="32" r="3" fill="rgba(255,255,255,0.4)"/>
+              <!-- Small leaf -->
+              <path d="M18 50 Q22 44 28 46 Q24 52 18 50Z" fill="rgba(168,213,181,0.5)"/>
+            </svg>
+          </div>
+          <div class="ww-logo-text-block">
+            <div class="ww-logo-wordmark">Wealth<span class="accent">Wise</span></div>
+            <div class="ww-logo-tagline">Student Finance</div>
+          </div>
+        </div>
+      </div>
+      <h1 class="auth-title">Welcome back</h1>
+      <p class="auth-subtitle">Sign in to manage your finances</p>
+      <div class="error-msg" id="login-error"></div>
+      <div class="form-group">
+        <label class="form-label">Email address</label>
+        <div class="input-icon-wrap">
+          <i class="fas fa-envelope"></i>
+          <input type="email" id="login-email" class="form-control" placeholder="you@example.com" autocomplete="email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Password</label>
+        <div class="input-icon-wrap">
+          <i class="fas fa-lock"></i>
+          <input type="password" id="login-password" class="form-control" placeholder="Your password" autocomplete="current-password">
+        </div>
+      </div>
+      <button class="btn btn-primary" onclick="doLogin()"><i class="fas fa-sign-in-alt"></i> Sign In</button>
+      <div class="auth-switch">Don't have an account? <a onclick="showSignup()">Create one</a></div>
+    </div>
+  </div>
+
+  <!-- SIGNUP -->
+  <div class="auth-screen" id="signup-screen" style="display:none;">
+    <div class="auth-card">
+      <div class="auth-logo-wrap">
+        <div class="ww-logo">
+          <div class="ww-logo-mark">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#3d8f5f"/>
+                  <stop offset="100%" stop-color="#1a4a2e"/>
+                </linearGradient>
+              </defs>
+              <rect width="64" height="64" rx="16" fill="url(#bgGrad2)"/>
+              <path d="M12 48 C12 48 22 26 32 32 C42 38 52 12 52 12"
+                stroke="#a8d5b5" stroke-width="3.5" fill="none"
+                stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="52" cy="12" r="4" fill="#a8d5b5"/>
+              <circle cx="32" cy="32" r="3" fill="rgba(255,255,255,0.4)"/>
+              <path d="M18 50 Q22 44 28 46 Q24 52 18 50Z" fill="rgba(168,213,181,0.5)"/>
+            </svg>
+          </div>
+          <div class="ww-logo-text-block">
+            <div class="ww-logo-wordmark">Wealth<span class="accent">Wise</span></div>
+            <div class="ww-logo-tagline">Student Finance</div>
+          </div>
+        </div>
+      </div>
+      <h1 class="auth-title">Get started</h1>
+      <p class="auth-subtitle">Create your account in seconds</p>
+      <div class="error-msg" id="signup-error"></div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">First name</label>
+          <input type="text" id="signup-fname" class="form-control" placeholder="John" autocomplete="given-name">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Last name</label>
+          <input type="text" id="signup-lname" class="form-control" placeholder="Doe" autocomplete="family-name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Email address</label>
+        <div class="input-icon-wrap">
+          <i class="fas fa-envelope"></i>
+          <input type="email" id="signup-email" class="form-control" placeholder="you@example.com" autocomplete="email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Password</label>
+        <div class="input-icon-wrap">
+          <i class="fas fa-lock"></i>
+          <input type="password" id="signup-password" class="form-control" placeholder="Min. 6 characters" autocomplete="new-password">
+        </div>
+      </div>
+      <button class="btn btn-primary" onclick="doSignup()"><i class="fas fa-user-plus"></i> Create Account</button>
+      <div class="auth-switch">Already have an account? <a onclick="showLogin()">Sign in</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ MAIN APP ══════════════ -->
+<div id="app">
+  <div class="sidebar-overlay" id="sidebar-overlay" onclick="closeSidebar()"></div>
+
+  <!-- SIDEBAR -->
+  <nav class="sidebar" id="sidebar" role="navigation" aria-label="Main navigation">
+    <div class="sidebar-logo">
+      <!-- Sidebar logo: inverted white version -->
+      <div class="ww-logo inverted">
+        <div class="ww-logo-mark">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-label="WealthWise">
+            <rect width="64" height="64" rx="16" fill="rgba(255,255,255,0.1)"/>
+            <path d="M12 48 C12 48 22 26 32 32 C42 38 52 12 52 12"
+              stroke="#a8d5b5" stroke-width="3.5" fill="none"
+              stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="52" cy="12" r="4" fill="#a8d5b5"/>
+            <circle cx="32" cy="32" r="3" fill="rgba(255,255,255,0.35)"/>
+            <path d="M18 50 Q22 44 28 46 Q24 52 18 50Z" fill="rgba(168,213,181,0.4)"/>
+          </svg>
+        </div>
+        <div class="ww-logo-text-block">
+          <div class="ww-logo-wordmark">Wealth<span class="accent">Wise</span></div>
+          <div class="ww-logo-tagline">Student Finance</div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-nav">
+      <div class="nav-section-label">Overview</div>
+      <div class="nav-item active" onclick="navigate('dashboard')"><i class="fas fa-th-large"></i> Dashboard</div>
+      <div class="nav-item" onclick="navigate('analytics')"><i class="fas fa-chart-bar"></i> Analytics</div>
+      <div class="nav-section-label">Finance</div>
+      <div class="nav-item" onclick="navigate('accounts')"><i class="fas fa-university"></i> Bank Accounts</div>
+      <div class="nav-item" onclick="navigate('transactions')"><i class="fas fa-exchange-alt"></i> Transactions</div>
+      <div class="nav-item" onclick="navigate('budget')"><i class="fas fa-bullseye"></i> Budget & Goals</div>
+      <div class="nav-section-label">Reports</div>
+      <div class="nav-item" onclick="navigate('reports')"><i class="fas fa-file-alt"></i> Reports</div>
+    </div>
+    <div class="sidebar-user">
+      <div class="user-avatar" id="user-avatar">U</div>
+      <div class="user-info">
+        <div class="user-name" id="user-display-name">User</div>
+        <div class="user-email" id="user-display-email">user@email.com</div>
+      </div>
+      <button class="logout-btn" onclick="doLogout()" title="Sign out" aria-label="Sign out"><i class="fas fa-sign-out-alt"></i></button>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="main-content" role="main">
+    <header class="topbar">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <button class="mobile-menu-btn" onclick="toggleSidebar()" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+        <h1 class="topbar-title" id="page-title">Dashboard</h1>
+      </div>
+      <div class="topbar-right">
+        <div class="date-badge" id="today-date"></div>
+        <button class="btn btn-primary btn-sm" id="topbar-action-btn" onclick="openAddTransactionModal()">
+          <i class="fas fa-plus"></i> <span>Add Transaction</span>
+        </button>
+      </div>
+    </header>
+
+    <div class="page-content">
+
+      <!-- ─── DASHBOARD ─── -->
+      <div class="tab-page active" id="page-dashboard">
+        <div class="stats-grid" id="dash-stats">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-wallet"></i></div>
+            <div class="stat-label">Total Balance</div>
+            <div class="stat-value" id="stat-total-balance">₦0.00</div>
+            <div class="stat-change" id="stat-accounts-count">0 accounts</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-arrow-down"></i></div>
+            <div class="stat-label">Total Income (Month)</div>
+            <div class="stat-value" id="stat-total-income">₦0.00</div>
+            <div class="stat-change up" id="stat-income-count">0 transactions</div>
+          </div>
+          <div class="stat-card danger">
+            <div class="stat-icon"><i class="fas fa-arrow-up"></i></div>
+            <div class="stat-label">Total Expenses (Month)</div>
+            <div class="stat-value" id="stat-total-expense">₦0.00</div>
+            <div class="stat-change down" id="stat-expense-count">0 transactions</div>
+          </div>
+          <div class="stat-card warning">
+            <div class="stat-icon"><i class="fas fa-balance-scale"></i></div>
+            <div class="stat-label">Net (Month)</div>
+            <div class="stat-value" id="stat-net">₦0.00</div>
+            <div class="stat-change" id="stat-net-label">Income – Expenses</div>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">Recent Transactions</h2>
+              <button class="btn btn-outline btn-sm" onclick="navigate('transactions')">View all</button>
+            </div>
+            <div class="card-body" style="padding-top:8px;">
+              <ul class="tx-list" id="dash-recent-tx">
+                <div class="empty-state"><i class="fas fa-receipt"></i><p>No transactions yet</p></div>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">Accounts Overview</h2>
+              <button class="btn btn-outline btn-sm" onclick="navigate('accounts')">Manage</button>
+            </div>
+            <div class="card-body">
+              <div id="dash-accounts-list">
+                <div class="empty-state"><i class="fas fa-university"></i><p>No accounts added</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header"><h2 class="card-title">Income vs Expenses — Last 7 Days</h2></div>
+          <div class="card-body">
+            <div class="bar-chart" id="mini-chart">
+              <div class="empty-state" style="width:100%;"><i class="fas fa-chart-bar"></i><p>Add transactions to see chart</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── ACCOUNTS ─── -->
+      <div class="tab-page" id="page-accounts">
+        <div class="bank-cards-grid" id="accounts-grid">
+          <div class="add-bank-card" onclick="openAddBankModal()">
+            <i class="fas fa-plus-circle"></i><p>Add New Account</p>
+          </div>
+        </div>
+        <div class="card" id="account-tx-section" style="display:none;">
+          <div class="card-header">
+            <h2 class="card-title" id="account-tx-title">Account Transactions</h2>
+            <button class="btn btn-primary btn-sm" onclick="openAddTransactionModal()"><i class="fas fa-plus"></i> Add Transaction</button>
+          </div>
+          <div class="card-body" style="padding-top:8px;">
+            <ul class="tx-list" id="account-tx-list"></ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── TRANSACTIONS ─── -->
+      <div class="tab-page" id="page-transactions">
+        <div class="card" style="margin-bottom:24px;">
+          <div class="card-header">
+            <h2 class="card-title">All Transactions</h2>
+            <div style="display:flex;gap:10px;align-items:center;">
+              <select class="form-select" style="width:auto;" id="tx-filter-account" onchange="renderAllTransactions()">
+                <option value="">All Accounts</option>
+              </select>
+              <select class="form-select" style="width:auto;" id="tx-filter-type" onchange="renderAllTransactions()">
+                <option value="">All Types</option>
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+              </select>
+              <button class="btn btn-primary btn-sm" onclick="openAddTransactionModal()"><i class="fas fa-plus"></i> Add</button>
+            </div>
+          </div>
+          <div class="card-body" style="padding-top:8px;">
+            <ul class="tx-list" id="all-tx-list">
+              <div class="empty-state"><i class="fas fa-receipt"></i><p>No transactions yet</p></div>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── ANALYTICS ─── -->
+      <div class="tab-page" id="page-analytics">
+        <div class="stats-grid" id="analytics-stats"></div>
+        <div class="analytics-grid">
+          <div class="card">
+            <div class="card-header"><h2 class="card-title">Spending by Account</h2></div>
+            <div class="card-body"><div class="donut-wrap" id="donut-chart"></div></div>
+          </div>
+          <div class="card">
+            <div class="card-header"><h2 class="card-title">Monthly Overview</h2></div>
+            <div class="card-body"><div class="bar-chart" id="monthly-chart" style="height:180px;"></div></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header"><h2 class="card-title">Account Balances</h2></div>
+          <div class="card-body"><div id="analytics-accounts-table"></div></div>
+        </div>
+      </div>
+
+      <!-- ─── BUDGET ─── -->
+      <div class="tab-page" id="page-budget">
+        <div style="display:flex;justify-content:flex-end;margin-bottom:20px;">
+          <button class="btn btn-primary btn-sm" onclick="openAddBudgetModal()"><i class="fas fa-plus"></i> New Budget Goal</button>
+        </div>
+        <div id="budget-list">
+          <div class="empty-state card" style="padding:48px;"><i class="fas fa-bullseye"></i><p>No budget goals yet. Create one to start tracking!</p></div>
+        </div>
+      </div>
+
+      <!-- ─── REPORTS ─── -->
+      <div class="tab-page" id="page-reports">
+        <div class="card" style="margin-bottom:24px;">
+          <div class="card-header"><h2 class="card-title">Generate Report</h2></div>
+          <div class="card-body">
+            <div class="report-filters">
+              <div class="filter-group">
+                <label class="filter-label">Period</label>
+                <select class="form-select" id="report-period" onchange="updateReportDates()">
+                  <option value="daily">Daily</option>
+                  <option value="weekly">Weekly</option>
+                  <option value="monthly" selected>Monthly</option>
+                  <option value="custom">Custom Range</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label class="filter-label">From</label>
+                <input type="date" class="form-control" id="report-date-from" style="width:160px;">
+              </div>
+              <div class="filter-group">
+                <label class="filter-label">To</label>
+                <input type="date" class="form-control" id="report-date-to" style="width:160px;">
+              </div>
+              <div class="filter-group">
+                <label class="filter-label">Account</label>
+                <select class="form-select" id="report-account" style="width:180px;">
+                  <option value="">All Accounts</option>
+                </select>
+              </div>
+              <div class="filter-group" style="justify-content:flex-end;">
+                <label class="filter-label">&nbsp;</label>
+                <div style="display:flex;gap:8px;">
+                  <button class="btn btn-primary btn-sm" onclick="generateReport()"><i class="fas fa-search"></i> Generate</button>
+                  <button class="btn btn-outline btn-sm" onclick="downloadReport()"><i class="fas fa-download"></i> Download CSV</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title" id="report-title">Report</h2>
+            <div id="report-summary-badges" style="display:flex;gap:8px;"></div>
+          </div>
+          <div class="card-body" style="padding:0;">
+            <div style="overflow-x:auto;">
+              <table class="report-table" id="report-table">
+                <thead><tr><th>Date</th><th>Account</th><th>Type</th><th>Narration</th><th>Amount</th><th>Balance After</th></tr></thead>
+                <tbody id="report-tbody"></tbody>
+                <tfoot id="report-tfoot"></tfoot>
+              </table>
+            </div>
+            <div id="report-empty" class="empty-state" style="display:none;"><i class="fas fa-file-alt"></i><p>Generate a report to see results</p></div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end page-content -->
+  </main>
+</div>
+
+<!-- ══════════ MODALS ══════════ -->
+<div class="modal-backdrop" id="add-bank-modal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 class="modal-title" id="bank-modal-title">Add Bank Account</h2>
+      <button class="modal-close" onclick="closeModal('add-bank-modal')"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="modal-body">
+      <input type="hidden" id="edit-bank-id">
+      <div class="form-group">
+        <label class="form-label">Account Name</label>
+        <input type="text" id="bank-name" class="form-control" placeholder="e.g. GTBank Savings">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Account Type</label>
+          <select id="bank-type" class="form-select">
+            <option>Savings</option><option>Checking</option><option>Wallet</option><option>Investment</option><option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Opening Balance (₦)</label>
+          <input type="number" id="bank-opening" class="form-control" placeholder="0.00" min="0">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Currency</label>
+        <select id="bank-currency" class="form-select">
+          <option value="₦">₦ Nigerian Naira</option>
+          <option value="$">$ US Dollar</option>
+          <option value="€">€ Euro</option>
+          <option value="£">£ British Pound</option>
+          <option value="GH₵">GH₵ Ghana Cedi</option>
+          <option value="KSh">KSh Kenyan Shilling</option>
+        </select>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" onclick="closeModal('add-bank-modal')">Cancel</button>
+      <button class="btn btn-primary" onclick="saveBank()"><i class="fas fa-save"></i> Save Account</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="add-tx-modal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 class="modal-title">Record Transaction</h2>
+      <button class="modal-close" onclick="closeModal('add-tx-modal')"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label class="form-label">Transaction Type</label>
+        <div class="radio-group">
+          <label class="radio-option income-opt selected" id="type-income-opt">
+            <input type="radio" name="tx-type" value="income" checked id="type-income">
+            <i class="fas fa-arrow-down"></i> Income
+          </label>
+          <label class="radio-option expense-opt" id="type-expense-opt">
+            <input type="radio" name="tx-type" value="expense" id="type-expense">
+            <i class="fas fa-arrow-up"></i> Expense
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Bank Account</label>
+        <select id="tx-account" class="form-select"><option value="">— Select Account —</option></select>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Amount (₦)</label>
+          <input type="number" id="tx-amount" class="form-control" placeholder="0.00" min="0.01" step="0.01">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Date</label>
+          <input type="date" id="tx-date" class="form-control">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Narration / Description</label>
+        <input type="text" id="tx-narration" class="form-control" placeholder="e.g. Salary deposit, Food expenses...">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Category (optional)</label>
+        <select id="tx-category" class="form-select">
+          <option>General</option><option>Food & Dining</option><option>Transportation</option>
+          <option>Entertainment</option><option>Education</option><option>Healthcare</option>
+          <option>Shopping</option><option>Utilities</option><option>Salary / Allowance</option>
+          <option>Gift / Transfer</option><option>Other</option>
+        </select>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" onclick="closeModal('add-tx-modal')">Cancel</button>
+      <button class="btn btn-primary" onclick="saveTransaction()"><i class="fas fa-save"></i> Save Transaction</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="add-budget-modal">
+  <div class="modal" style="max-width:560px;">
+    <div class="modal-header">
+      <h2 class="modal-title">New Budget Goal</h2>
+      <button class="modal-close" onclick="closeModal('add-budget-modal')"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label class="form-label">Goal Name</label>
+        <input type="text" id="budget-goal-name" class="form-control" placeholder="e.g. School Supplies, Trip to Lagos">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Saved So Far (₦)</label>
+          <input type="number" id="budget-saved" class="form-control" placeholder="0.00" min="0" oninput="calcBudget()">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Target Date (optional)</label>
+          <input type="date" id="budget-target-date" class="form-control">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Budget Items</label>
+        <div id="budget-items-form"></div>
+        <button type="button" class="btn btn-outline btn-sm" onclick="addBudgetItemRow()" style="width:100%;margin-top:8px;">
+          <i class="fas fa-plus"></i> Add Item
+        </button>
+      </div>
+      <div class="budget-total-row" id="budget-calc-total">
+        <span>Calculated Total</span>
+        <span class="budget-total-amount" id="budget-total-display">₦0.00</span>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" onclick="closeModal('add-budget-modal')">Cancel</button>
+      <button class="btn btn-primary" onclick="saveBudgetGoal()"><i class="fas fa-save"></i> Save Goal</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PWA: SERVICE WORKER REGISTRATION
+══════════════════════════════════════ -->
+<script>
+  // Register Service Worker
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then(reg => console.log('[WealthWise] SW registered:', reg.scope))
+        .catch(err => console.log('[WealthWise] SW registration failed:', err));
+    });
+  }
+
+  // Online / Offline detection
+  const offlineBanner = document.getElementById('offline-banner');
+  window.addEventListener('offline', () => offlineBanner.classList.add('show'));
+  window.addEventListener('online', () => offlineBanner.classList.remove('show'));
+
+  // PWA Install prompt
+  let deferredPrompt = null;
+  const pwaBanner = document.getElementById('pwa-banner');
+  const installBtn = document.getElementById('pwa-install-btn');
+  const dismissBtn = document.getElementById('pwa-dismiss-btn');
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    // Show banner after 3s if not dismissed
+    setTimeout(() => {
+      if (!localStorage.getItem('pwa-dismissed')) {
+        pwaBanner.classList.add('show');
+      }
+    }, 3000);
+  });
+
+  installBtn.addEventListener('click', async () => {
+    if (!deferredPrompt) return;
+    deferredPrompt.prompt();
+    const { outcome } = await deferredPrompt.userChoice;
+    if (outcome === 'accepted') {
+      pwaBanner.classList.remove('show');
+    }
+    deferredPrompt = null;
+  });
+
+  dismissBtn.addEventListener('click', () => {
+    pwaBanner.classList.remove('show');
+    localStorage.setItem('pwa-dismissed', '1');
+  });
+
+  window.addEventListener('appinstalled', () => {
+    pwaBanner.classList.remove('show');
+    console.log('[WealthWise] PWA installed');
+  });
+</script>
+
+<!-- Firebase SDK -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged, updateProfile }
+    from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
+  import { getFirestore, doc, setDoc, getDoc, updateDoc, collection, addDoc, getDocs, deleteDoc, query, where, orderBy }
+    from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDXC5-MutNoVYxpj9AY_1RP3XkDpAlX4wA",
+    authDomain: "eu-plus.firebaseapp.com",
+    projectId: "eu-plus",
+    storageBucket: "eu-plus.firebasestorage.app",
+    messagingSenderId: "581247284457",
+    appId: "1:581247284457:web:1b27b9eeb156d21d696c78",
+    measurementId: "G-RRDGFXHKZN"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const db = getFirestore(app);
+
+  let currentUser = null;
+  let banks = [];
+  let transactions = [];
+  let budgets = [];
+  let selectedAccountId = null;
+
+  const fmt = (n, sym = '₦') => `${sym}${Number(n || 0).toLocaleString('en-NG', {minimumFractionDigits:2, maximumFractionDigits:2})}`;
+  const today = () => new Date().toISOString().slice(0,10);
+  const uid = () => currentUser?.uid;
+  const spinner = (show, msg='Please wait...') => {
+    const el = document.getElementById('spinner');
+    el.classList.toggle('active', show);
+    el.querySelector('.spinner-text').textContent = msg;
+  };
+  const toast = (msg, type='success') => {
+    const t = document.getElementById('toast');
+    t.className = `toast ${type} show`;
+    t.querySelector('i').className = type === 'success' ? 'fas fa-check-circle' : 'fas fa-exclamation-circle';
+    document.getElementById('toast-msg').textContent = msg;
+    setTimeout(() => t.classList.remove('show'), 3000);
+  };
+
+  window.showSpinner = spinner;
+  window.showToast = toast;
+
+  // AUTH
+  window.doLogin = async () => {
+    const email = document.getElementById('login-email').value.trim();
+    const pass = document.getElementById('login-password').value;
+    const errEl = document.getElementById('login-error');
+    errEl.classList.remove('show');
+    if (!email || !pass) { errEl.textContent = 'Please fill in all fields.'; errEl.classList.add('show'); return; }
+    spinner(true, 'Signing in...');
+    try { await signInWithEmailAndPassword(auth, email, pass); }
+    catch(e) { spinner(false); errEl.textContent = e.code === 'auth/invalid-credential' ? 'Invalid email or password.' : e.message; errEl.classList.add('show'); }
+  };
+
+  window.doSignup = async () => {
+    const fname = document.getElementById('signup-fname').value.trim();
+    const lname = document.getElementById('signup-lname').value.trim();
+    const email = document.getElementById('signup-email').value.trim();
+    const pass = document.getElementById('signup-password').value;
+    const errEl = document.getElementById('signup-error');
+    errEl.classList.remove('show');
+    if (!fname || !lname || !email || !pass) { errEl.textContent = 'Please fill in all fields.'; errEl.classList.add('show'); return; }
+    if (pass.length < 6) { errEl.textContent = 'Password must be at least 6 characters.'; errEl.classList.add('show'); return; }
+    spinner(true, 'Creating account...');
+    try {
+      const cred = await createUserWithEmailAndPassword(auth, email, pass);
+      await updateProfile(cred.user, { displayName: `${fname} ${lname}` });
+      await setDoc(doc(db, 'users', cred.user.uid), { displayName: `${fname} ${lname}`, email, createdAt: new Date().toISOString() });
+    } catch(e) { spinner(false); errEl.textContent = e.code === 'auth/email-already-in-use' ? 'Email already in use.' : e.message; errEl.classList.add('show'); }
+  };
+
+  window.doLogout = async () => { spinner(true, 'Signing out...'); await signOut(auth); spinner(false); };
+  window.showLogin = () => { document.getElementById('signup-screen').style.display='none'; document.getElementById('login-screen').style.display='flex'; };
+  window.showSignup = () => { document.getElementById('login-screen').style.display='none'; document.getElementById('signup-screen').style.display='flex'; };
+
+  onAuthStateChanged(auth, async (user) => {
+    spinner(false);
+    if (user) {
+      currentUser = user;
+      document.getElementById('auth-screen').style.display = 'none';
+      document.getElementById('app').style.display = 'flex';
+      document.getElementById('user-display-name').textContent = user.displayName || 'User';
+      document.getElementById('user-display-email').textContent = user.email;
+      document.getElementById('user-avatar').textContent = (user.displayName || user.email).charAt(0).toUpperCase();
+      setTodayDate();
+      await loadAll();
+      renderAll();
+    } else {
+      currentUser = null; banks = []; transactions = []; budgets = [];
+      document.getElementById('auth-screen').style.display = 'block';
+      document.getElementById('app').style.display = 'none';
+      document.getElementById('login-screen').style.display = 'flex';
+      document.getElementById('signup-screen').style.display = 'none';
+    }
+  });
+
+  const loadAll = async () => {
+    spinner(true, 'Loading your data...');
+    try {
+      const [bSnap, tSnap, buSnap] = await Promise.all([
+        getDocs(collection(db, 'users', uid(), 'banks')),
+        getDocs(query(collection(db, 'users', uid(), 'transactions'), orderBy('date','desc'))),
+        getDocs(collection(db, 'users', uid(), 'budgets'))
+      ]);
+      banks = bSnap.docs.map(d => ({id:d.id,...d.data()}));
+      transactions = tSnap.docs.map(d => ({id:d.id,...d.data()}));
+      budgets = buSnap.docs.map(d => ({id:d.id,...d.data()}));
+    } catch(e) { console.error(e); }
+    spinner(false);
+  };
+
+  window.saveBank = async () => {
+    const name = document.getElementById('bank-name').value.trim();
+    const type = document.getElementById('bank-type').value;
+    const opening = parseFloat(document.getElementById('bank-opening').value) || 0;
+    const currency = document.getElementById('bank-currency').value;
+    const editId = document.getElementById('edit-bank-id').value;
+    if (!name) { toast('Please enter an account name','error'); return; }
+    spinner(true, 'Saving account...');
+    try {
+      if (editId) {
+        await updateDoc(doc(db,'users',uid(),'banks',editId), {name,type,currency});
+        const idx = banks.findIndex(b=>b.id===editId);
+        if(idx>-1) { banks[idx].name=name; banks[idx].type=type; banks[idx].currency=currency; }
+      } else {
+        const ref = await addDoc(collection(db,'users',uid(),'banks'), {name,type,opening,currency,createdAt:new Date().toISOString()});
+        banks.push({id:ref.id,name,type,opening,currency});
+      }
+      closeModal('add-bank-modal'); renderAll(); toast('Account saved!');
+    } catch(e) { toast(e.message,'error'); }
+    spinner(false);
+  };
+
+  window.deleteBank = async (id) => {
+    if (!confirm('Delete this account and all its transactions?')) return;
+    spinner(true,'Deleting...');
+    try {
+      await deleteDoc(doc(db,'users',uid(),'banks',id));
+      const txForBank = transactions.filter(t=>t.bankId===id);
+      await Promise.all(txForBank.map(t=>deleteDoc(doc(db,'users',uid(),'transactions',t.id))));
+      banks = banks.filter(b=>b.id!==id);
+      transactions = transactions.filter(t=>t.bankId!==id);
+      renderAll(); toast('Account deleted');
+    } catch(e) { toast(e.message,'error'); }
+    spinner(false);
+  };
+
+  window.saveTransaction = async () => {
+    const bankId = document.getElementById('tx-account').value;
+    const type = document.querySelector('input[name="tx-type"]:checked')?.value || 'income';
+    const amount = parseFloat(document.getElementById('tx-amount').value);
+    const date = document.getElementById('tx-date').value;
+    const narration = document.getElementById('tx-narration').value.trim();
+    const category = document.getElementById('tx-category').value;
+    if (!bankId) { toast('Select a bank account','error'); return; }
+    if (!amount || amount <= 0) { toast('Enter a valid amount','error'); return; }
+    if (!narration) { toast('Add a narration','error'); return; }
+    const bank = banks.find(b=>b.id===bankId);
+    if (!bank) return;
+    spinner(true,'Saving transaction...');
+    try {
+      const data = {bankId, bankName: bank.name, type, amount, date: date||today(), narration, category, createdAt: new Date().toISOString()};
+      const ref = await addDoc(collection(db,'users',uid(),'transactions'), data);
+      transactions.unshift({id:ref.id,...data});
+      closeModal('add-tx-modal'); renderAll(); toast(`${type==='income'?'Income':'Expense'} recorded!`);
+    } catch(e) { toast(e.message,'error'); }
+    spinner(false);
+  };
+
+  window.deleteTransaction = async (id) => {
+    if (!confirm('Delete this transaction?')) return;
+    spinner(true,'Deleting...');
+    try {
+      await deleteDoc(doc(db,'users',uid(),'transactions',id));
+      transactions = transactions.filter(t=>t.id!==id);
+      renderAll(); toast('Transaction deleted');
+    } catch(e) { toast(e.message,'error'); }
+    spinner(false);
+  };
+
+  window.saveBudgetGoal = async () => {
+    const name = document.getElementById('budget-goal-name').value.trim();
+    const saved = parseFloat(document.getElementById('budget-saved').value) || 0;
+    const targetDate = document.getElementById('budget-target-date').value;
+    const items = [...document.querySelectorAll('.budget-form-item')].map(row => ({
+      name: row.querySelector('.bi-name').value.trim(),
+      price: parseFloat(row.querySelector('.bi-price').value) || 0
+    })).filter(i=>i.name);
+    const total = items.reduce((s,i)=>s+i.price,0);
+    if (!name) { toast('Enter a goal name','error'); return; }
+    spinner(true,'Saving goal...');
+    try {
+      const data = {name, saved, targetDate, items, total, createdAt: new Date().toISOString()};
+      const ref = await addDoc(collection(db,'users',uid(),'budgets'), data);
+      budgets.push({id:ref.id,...data});
+      closeModal('add-budget-modal'); renderBudgets(); toast('Budget goal saved!');
+    } catch(e) { toast(e.message,'error'); }
+    spinner(false);
+  };
+
+  window.deleteBudget = async (id) => {
+    if (!confirm('Delete this budget goal?')) return;
+    spinner(true,'Deleting...');
+    try {
+      await deleteDoc(doc(db,'users',uid(),'budgets',id));
+      budgets = budgets.filter(b=>b.id!==id);
+      renderBudgets(); toast('Budget goal deleted');
+    } catch(e) { toast(e.message,'error'); }
+    spinner(false);
+  };
+
+  // RENDER
+  const getAccountBalance = (bankId) => {
+    const bank = banks.find(b=>b.id===bankId);
+    const opening = bank ? (bank.opening||0) : 0;
+    return opening + transactions.filter(t=>t.bankId===bankId).reduce((s,t)=>t.type==='income'?s+t.amount:s-t.amount, 0);
+  };
+  const getTotalBalance = () => banks.reduce((s,b)=>s+getAccountBalance(b.id),0);
+  const getMonthTotals = () => {
+    const now = new Date();
+    const ym = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}`;
+    const thisMonth = transactions.filter(t=>t.date?.startsWith(ym));
+    const income = thisMonth.filter(t=>t.type==='income').reduce((s,t)=>s+t.amount,0);
+    const expense = thisMonth.filter(t=>t.type==='expense').reduce((s,t)=>s+t.amount,0);
+    return { income, expense, count_income: thisMonth.filter(t=>t.type==='income').length, count_expense: thisMonth.filter(t=>t.type==='expense').length };
+  };
+
+  const renderAll = () => { renderDashboard(); renderAccountsGrid(); renderAllTransactions(); renderAnalytics(); renderBudgets(); populateAccountSelects(); };
+
+  const renderDashboard = () => {
+    const total = getTotalBalance();
+    const {income,expense,count_income,count_expense} = getMonthTotals();
+    const net = income - expense;
+    document.getElementById('stat-total-balance').textContent = fmt(total);
+    document.getElementById('stat-accounts-count').textContent = `${banks.length} account${banks.length!==1?'s':''}`;
+    document.getElementById('stat-total-income').textContent = fmt(income);
+    document.getElementById('stat-income-count').textContent = `${count_income} transaction${count_income!==1?'s':''}`;
+    document.getElementById('stat-total-expense').textContent = fmt(expense);
+    document.getElementById('stat-expense-count').textContent = `${count_expense} transaction${count_expense!==1?'s':''}`;
+    document.getElementById('stat-net').textContent = fmt(Math.abs(net));
+    document.getElementById('stat-net').style.color = net >= 0 ? 'var(--success)' : 'var(--danger)';
+
+    const recentEl = document.getElementById('dash-recent-tx');
+    const recent = transactions.slice(0,5);
+    recentEl.innerHTML = !recent.length ? '<div class="empty-state"><i class="fas fa-receipt"></i><p>No transactions yet</p></div>' : recent.map(t=>txItemHTML(t)).join('');
+
+    const dashAccEl = document.getElementById('dash-accounts-list');
+    dashAccEl.innerHTML = !banks.length ? '<div class="empty-state"><i class="fas fa-university"></i><p>No accounts added</p></div>' : banks.map(b=>{
+      const bal = getAccountBalance(b.id); const sym = b.currency||'₦';
+      return `<div class="tx-item" style="cursor:pointer;" onclick="window.navigate('accounts');window.selectAccount('${b.id}')">
+        <div class="tx-icon income"><i class="fas fa-university"></i></div>
+        <div class="tx-info"><div class="tx-narration">${b.name}</div><div class="tx-meta">${b.type} · ${sym}</div></div>
+        <div class="tx-amount income">${fmt(bal,sym)}</div>
+      </div>`;
+    }).join('');
+    renderMiniChart();
+  };
+
+  const renderMiniChart = () => {
+    const chartEl = document.getElementById('mini-chart');
+    const days = [];
+    for(let i=6;i>=0;i--) {
+      const d = new Date(); d.setDate(d.getDate()-i);
+      const ds = d.toISOString().slice(0,10);
+      const dayTx = transactions.filter(t=>t.date===ds);
+      days.push({ label: d.toLocaleDateString('en',{weekday:'short'}), income: dayTx.filter(t=>t.type==='income').reduce((s,t)=>s+t.amount,0), expense: dayTx.filter(t=>t.type==='expense').reduce((s,t)=>s+t.amount,0) });
+    }
+    const maxVal = Math.max(...days.map(d=>Math.max(d.income,d.expense)),1);
+    if (days.every(d=>d.income===0&&d.expense===0)) { chartEl.innerHTML = '<div class="empty-state" style="width:100%;"><i class="fas fa-chart-bar"></i><p>Add transactions to see chart</p></div>'; return; }
+    chartEl.innerHTML = days.map(d=>`<div class="bar-wrap"><div style="display:flex;align-items:flex-end;gap:3px;height:160px;width:100%"><div class="bar income" style="flex:1;height:${Math.round((d.income/maxVal)*100)}%" title="Income: ${fmt(d.income)}"></div><div class="bar expense" style="flex:1;height:${Math.round((d.expense/maxVal)*100)}%" title="Expense: ${fmt(d.expense)}"></div></div><div class="bar-label">${d.label}</div></div>`).join('');
+  };
+
+  const renderAccountsGrid = () => {
+    const grid = document.getElementById('accounts-grid');
+    let html = banks.map(b=>{
+      const bal = getAccountBalance(b.id); const sym = b.currency||'₦';
+      const income = transactions.filter(t=>t.bankId===b.id&&t.type==='income').reduce((s,t)=>s+t.amount,0);
+      const expense = transactions.filter(t=>t.bankId===b.id&&t.type==='expense').reduce((s,t)=>s+t.amount,0);
+      return `<div class="bank-card" onclick="selectAccount('${b.id}')">
+        <div class="bank-card-header"><div class="bank-card-name">${b.name}</div><div class="bank-card-type">${b.type}</div></div>
+        <div class="bank-card-balance">${fmt(bal,sym)}</div>
+        <div class="bank-card-label">Current Balance</div>
+        <div class="bank-card-footer">
+          <div><div class="bank-card-income">↓ <span>${fmt(income,sym)}</span> In</div><div class="bank-card-income">↑ <span>${fmt(expense,sym)}</span> Out</div></div>
+          <div class="bank-card-actions" onclick="event.stopPropagation()">
+            <button class="bank-action-btn" onclick="editBank('${b.id}')" title="Edit"><i class="fas fa-pen"></i></button>
+            <button class="bank-action-btn" onclick="deleteBank('${b.id}')" title="Delete"><i class="fas fa-trash"></i></button>
+          </div>
+        </div>
+      </div>`;
+    }).join('');
+    html += `<div class="add-bank-card" onclick="openAddBankModal()"><i class="fas fa-plus-circle"></i><p>Add New Account</p></div>`;
+    grid.innerHTML = html;
+    if (selectedAccountId) renderAccountTransactions(selectedAccountId);
+  };
+
+  window.selectAccount = (id) => { selectedAccountId = id; document.getElementById('account-tx-section').style.display='block'; renderAccountTransactions(id); if(window.innerWidth<900) closeSidebar(); };
+
+  const renderAccountTransactions = (bankId) => {
+    const bank = banks.find(b=>b.id===bankId);
+    if (!bank) return;
+    document.getElementById('account-tx-title').textContent = `${bank.name} — Transactions`;
+    const txList = transactions.filter(t=>t.bankId===bankId);
+    document.getElementById('account-tx-list').innerHTML = !txList.length
+      ? '<div class="empty-state"><i class="fas fa-receipt"></i><p>No transactions for this account</p></div>'
+      : txList.map(t=>txItemHTML(t,true)).join('');
+  };
+
+  const txItemHTML = (t, showDelete=true) => {
+    const isIncome = t.type==='income';
+    return `<li class="tx-item">
+      <div class="tx-icon ${t.type}"><i class="fas fa-${isIncome?'arrow-down':'arrow-up'}"></i></div>
+      <div class="tx-info"><div class="tx-narration">${t.narration}</div><div class="tx-meta">${t.date} · ${t.bankName||''} · ${t.category||'General'}</div></div>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div class="tx-amount ${t.type}">${isIncome?'+':'-'}${fmt(t.amount)}</div>
+        ${showDelete?`<button class="btn btn-icon btn-outline btn-sm" onclick="deleteTransaction('${t.id}')" title="Delete"><i class="fas fa-trash" style="color:var(--danger);font-size:12px;"></i></button>`:''}
+      </div>
+    </li>`;
+  };
+
+  const renderAllTransactions = () => {
+    const filterAccount = document.getElementById('tx-filter-account')?.value || '';
+    const filterType = document.getElementById('tx-filter-type')?.value || '';
+    let txs = [...transactions];
+    if (filterAccount) txs = txs.filter(t=>t.bankId===filterAccount);
+    if (filterType) txs = txs.filter(t=>t.type===filterType);
+    const listEl = document.getElementById('all-tx-list');
+    listEl.innerHTML = !txs.length ? '<div class="empty-state"><i class="fas fa-receipt"></i><p>No transactions found</p></div>' : txs.map(t=>txItemHTML(t)).join('');
+  };
+
+  const renderAnalytics = () => {
+    const {income,expense} = getMonthTotals();
+    const total = getTotalBalance();
+    document.getElementById('analytics-stats').innerHTML = `
+      <div class="stat-card"><div class="stat-icon"><i class="fas fa-coins"></i></div><div class="stat-label">Total Balance</div><div class="stat-value">${fmt(total)}</div><div class="stat-change">${banks.length} accounts</div></div>
+      <div class="stat-card"><div class="stat-icon"><i class="fas fa-arrow-down"></i></div><div class="stat-label">Monthly Income</div><div class="stat-value" style="color:var(--success)">${fmt(income)}</div></div>
+      <div class="stat-card danger"><div class="stat-icon"><i class="fas fa-arrow-up"></i></div><div class="stat-label">Monthly Expenses</div><div class="stat-value" style="color:var(--danger)">${fmt(expense)}</div></div>
+      <div class="stat-card"><div class="stat-icon"><i class="fas fa-percentage"></i></div><div class="stat-label">Expense Ratio</div><div class="stat-value">${income>0?Math.round((expense/income)*100):0}%</div><div class="stat-change">of income spent</div></div>`;
+
+    const donutEl = document.getElementById('donut-chart');
+    if (!banks.length) { donutEl.innerHTML = '<div class="empty-state" style="width:100%"><i class="fas fa-chart-pie"></i><p>No accounts</p></div>'; }
+    else {
+      const colors = ['#1a4a2e','#2d6e47','#3d8f5f','#5aad7c','#7ec99a','#a8d5b5'];
+      const bankExpenses = banks.map((b,i)=>({ name:b.name, val:transactions.filter(t=>t.bankId===b.id&&t.type==='expense').reduce((s,t)=>s+t.amount,0), color:colors[i%colors.length] })).filter(b=>b.val>0);
+      const totalExp = bankExpenses.reduce((s,b)=>s+b.val,0)||1;
+      let offset=0;
+      const segments = bankExpenses.map(b=>{ const pct=(b.val/totalExp)*100; const seg=`<circle cx="60" cy="60" r="45" fill="none" stroke="${b.color}" stroke-width="18" stroke-dasharray="${pct*2.827} ${282.7}" stroke-dashoffset="${-offset*2.827}" transform="rotate(-90 60 60)"/>`; offset+=pct; return seg; }).join('');
+      donutEl.innerHTML = `<svg class="donut-svg" viewBox="0 0 120 120"><circle cx="60" cy="60" r="45" fill="none" stroke="var(--forest-ghost)" stroke-width="18"/>${segments}<text x="60" y="55" text-anchor="middle" font-size="10" fill="var(--text-muted)" font-family="DM Sans">Total</text><text x="60" y="70" text-anchor="middle" font-size="11" fill="var(--forest)" font-family="DM Mono" font-weight="500">${fmt(totalExp)}</text></svg><div class="donut-legend">${bankExpenses.map(b=>`<div class="legend-item"><div class="legend-dot" style="background:${b.color}"></div><span>${b.name}: ${fmt(b.val)}</span></div>`).join('')}</div>`;
+    }
+
+    renderMonthlyChart();
+
+    const tableEl = document.getElementById('analytics-accounts-table');
+    tableEl.innerHTML = !banks.length ? '<div class="empty-state"><i class="fas fa-university"></i><p>No accounts</p></div>' :
+      `<table class="report-table"><thead><tr><th>Account</th><th>Type</th><th>Opening</th><th>Income</th><th>Expenses</th><th>Balance</th></tr></thead><tbody>${banks.map(b=>{
+        const bal=getAccountBalance(b.id); const sym=b.currency||'₦';
+        const inc=transactions.filter(t=>t.bankId===b.id&&t.type==='income').reduce((s,t)=>s+t.amount,0);
+        const exp=transactions.filter(t=>t.bankId===b.id&&t.type==='expense').reduce((s,t)=>s+t.amount,0);
+        return `<tr><td><strong>${b.name}</strong></td><td><span class="tag tag-income">${b.type}</span></td><td>${fmt(b.opening||0,sym)}</td><td class="income-cell">${fmt(inc,sym)}</td><td class="expense-cell">${fmt(exp,sym)}</td><td><strong style="color:${bal>=0?'var(--success)':'var(--danger)'}">${fmt(bal,sym)}</strong></td></tr>`;
+      }).join('')}</tbody></table>`;
+  };
+
+  const renderMonthlyChart = () => {
+    const chartEl = document.getElementById('monthly-chart');
+    const months = [];
+    for(let i=5;i>=0;i--) { const d=new Date(); d.setMonth(d.getMonth()-i); const ym=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`; const mTx=transactions.filter(t=>t.date?.startsWith(ym)); months.push({ label:d.toLocaleDateString('en',{month:'short'}), income:mTx.filter(t=>t.type==='income').reduce((s,t)=>s+t.amount,0), expense:mTx.filter(t=>t.type==='expense').reduce((s,t)=>s+t.amount,0) }); }
+    const maxVal = Math.max(...months.map(m=>Math.max(m.income,m.expense)),1);
+    if(months.every(m=>m.income===0&&m.expense===0)) { chartEl.innerHTML='<div class="empty-state" style="width:100%;"><i class="fas fa-chart-bar"></i><p>No data yet</p></div>'; return; }
+    chartEl.innerHTML = months.map(m=>`<div class="bar-wrap"><div style="display:flex;align-items:flex-end;gap:3px;height:140px;width:100%"><div class="bar income" style="flex:1;height:${Math.round((m.income/maxVal)*100)}%" title="Income: ${fmt(m.income)}"></div><div class="bar expense" style="flex:1;height:${Math.round((m.expense/maxVal)*100)}%" title="Expense: ${fmt(m.expense)}"></div></div><div class="bar-label">${m.label}</div></div>`).join('');
+  };
+
+  const renderBudgets = () => {
+    const el = document.getElementById('budget-list');
+    if (!budgets.length) { el.innerHTML='<div class="empty-state card" style="padding:48px;"><i class="fas fa-bullseye"></i><p>No budget goals yet. Create one to start tracking!</p></div>'; return; }
+    el.innerHTML = budgets.map(b=>{
+      const pct = b.total>0?Math.min(Math.round((b.saved/b.total)*100),100):0;
+      const barClass = pct>=100?'':pct>=75?'warning':'';
+      const remaining = b.total - b.saved;
+      return `<div class="budget-item">
+        <div class="budget-item-header">
+          <div><div class="budget-item-name">${b.name}</div>${b.targetDate?`<div style="font-size:12px;color:var(--text-muted);margin-top:3px;"><i class="fas fa-calendar-alt"></i> Target: ${b.targetDate}</div>`:''}</div>
+          <div style="display:flex;align-items:center;gap:10px;"><div class="budget-item-target">${fmt(b.saved)} / ${fmt(b.total)}</div><button class="btn btn-icon btn-outline btn-sm" onclick="deleteBudget('${b.id}')"><i class="fas fa-trash" style="color:var(--danger);"></i></button></div>
+        </div>
+        ${b.items&&b.items.length?`<div class="budget-items-list">${b.items.map(i=>`<div class="budget-sub-item"><span class="budget-sub-name"><i class="fas fa-check-circle" style="color:var(--forest-light);margin-right:6px;font-size:11px;"></i>${i.name}</span><span class="budget-sub-price">${fmt(i.price)}</span></div>`).join('')}<div class="budget-total-row"><span>Total Cost</span><span class="budget-total-amount">${fmt(b.total)}</span></div></div>`:''}
+        <div class="progress-bar-wrap">
+          <div class="progress-label"><span>${pct}% saved</span><span style="color:${remaining>0?'var(--warning)':'var(--success)'};">${remaining>0?`${fmt(remaining)} remaining`:'Goal reached! 🎉'}</span></div>
+          <div class="progress-bar-bg"><div class="progress-bar-fill ${barClass}" style="width:${pct}%"></div></div>
+        </div>
+      </div>`;
+    }).join('');
+  };
+
+  const populateAccountSelects = () => {
+    const opts = banks.map(b=>`<option value="${b.id}">${b.name}</option>`).join('');
+    ['tx-filter-account','report-account'].forEach(id=>{ const el=document.getElementById(id); if(el) el.innerHTML='<option value="">All Accounts</option>'+opts; });
+    const txAcc = document.getElementById('tx-account');
+    if(txAcc) txAcc.innerHTML = '<option value="">— Select Account —</option>'+opts;
+  };
+
+  // MODALS
+  window.openAddBankModal = () => {
+    document.getElementById('edit-bank-id').value=''; document.getElementById('bank-name').value=''; document.getElementById('bank-opening').value=''; document.getElementById('bank-modal-title').textContent='Add Bank Account'; openModal('add-bank-modal');
+  };
+  window.editBank = (id) => {
+    const b=banks.find(b=>b.id===id); if(!b) return;
+    document.getElementById('edit-bank-id').value=id; document.getElementById('bank-name').value=b.name; document.getElementById('bank-type').value=b.type; document.getElementById('bank-opening').value=b.opening||0; document.getElementById('bank-currency').value=b.currency||'₦'; document.getElementById('bank-modal-title').textContent='Edit Account'; openModal('add-bank-modal');
+  };
+  window.openAddTransactionModal = () => {
+    document.getElementById('tx-amount').value=''; document.getElementById('tx-date').value=today(); document.getElementById('tx-narration').value=''; document.getElementById('type-income').checked=true; document.getElementById('type-income-opt').classList.add('selected'); document.getElementById('type-expense-opt').classList.remove('selected'); populateAccountSelects(); if(selectedAccountId) document.getElementById('tx-account').value=selectedAccountId; openModal('add-tx-modal');
+  };
+  window.openAddBudgetModal = () => {
+    document.getElementById('budget-goal-name').value=''; document.getElementById('budget-saved').value=''; document.getElementById('budget-target-date').value=''; document.getElementById('budget-items-form').innerHTML=''; document.getElementById('budget-total-display').textContent='₦0.00'; addBudgetItemRow(); openModal('add-budget-modal');
+  };
+  window.addBudgetItemRow = () => {
+    const form = document.getElementById('budget-items-form');
+    const row = document.createElement('div'); row.className='budget-form-item';
+    row.innerHTML=`<input type="text" class="form-control bi-name" placeholder="Item name" style="flex:2;" oninput="calcBudget()"><input type="number" class="form-control bi-price" placeholder="Price" style="flex:1;" min="0" oninput="calcBudget()"><button type="button" class="btn btn-icon btn-outline" onclick="this.closest('.budget-form-item').remove();calcBudget()"><i class="fas fa-times" style="color:var(--danger);"></i></button>`;
+    form.appendChild(row);
+  };
+  window.calcBudget = () => { document.getElementById('budget-total-display').textContent = fmt([...document.querySelectorAll('.bi-price')].reduce((s,el)=>s+(parseFloat(el.value)||0),0)); };
+  window.openModal = (id) => document.getElementById(id)?.classList.add('active');
+  window.closeModal = (id) => document.getElementById(id)?.classList.remove('active');
+
+  document.querySelectorAll('.modal-backdrop').forEach(el=>{ el.addEventListener('click', e=>{if(e.target===el) el.classList.remove('active');}); });
+  document.querySelectorAll('input[name="tx-type"]').forEach(r=>{ r.addEventListener('change',()=>{ document.getElementById('type-income-opt').classList.toggle('selected',document.getElementById('type-income').checked); document.getElementById('type-expense-opt').classList.toggle('selected',document.getElementById('type-expense').checked); }); });
+
+  // NAVIGATION
+  window.navigate = (page) => {
+    document.querySelectorAll('.tab-page').forEach(p=>p.classList.remove('active'));
+    document.querySelectorAll('.nav-item').forEach(n=>n.classList.remove('active'));
+    document.getElementById(`page-${page}`)?.classList.add('active');
+    document.querySelector(`.nav-item[onclick*="'${page}'"]`)?.classList.add('active');
+    const titles = {dashboard:'Dashboard',accounts:'Bank Accounts',transactions:'Transactions',analytics:'Analytics',budget:'Budget & Goals',reports:'Reports'};
+    document.getElementById('page-title').textContent = titles[page]||page;
+    const actionMap = {
+      dashboard:()=>{document.getElementById('topbar-action-btn').innerHTML='<i class="fas fa-plus"></i> <span>Add Transaction</span>';document.getElementById('topbar-action-btn').onclick=openAddTransactionModal;},
+      accounts:()=>{document.getElementById('topbar-action-btn').innerHTML='<i class="fas fa-plus"></i> <span>Add Account</span>';document.getElementById('topbar-action-btn').onclick=openAddBankModal;},
+      budget:()=>{document.getElementById('topbar-action-btn').innerHTML='<i class="fas fa-plus"></i> <span>New Goal</span>';document.getElementById('topbar-action-btn').onclick=openAddBudgetModal;},
+      default:()=>{document.getElementById('topbar-action-btn').innerHTML='<i class="fas fa-plus"></i> <span>Add Transaction</span>';document.getElementById('topbar-action-btn').onclick=openAddTransactionModal;}
+    };
+    (actionMap[page]||actionMap.default)();
+    if(page==='analytics') renderAnalytics();
+    if(page==='transactions') { populateAccountSelects(); renderAllTransactions(); }
+    if(window.innerWidth<900) closeSidebar();
+  };
+
+  // REPORTS
+  window.updateReportDates = () => {
+    const period = document.getElementById('report-period').value;
+    const now = new Date(); let from, to;
+    if(period==='daily'){from=to=today();}
+    else if(period==='weekly'){const d=new Date();d.setDate(d.getDate()-d.getDay());from=d.toISOString().slice(0,10);to=today();}
+    else if(period==='monthly'){from=`${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-01`;to=today();}
+    if(period!=='custom'){document.getElementById('report-date-from').value=from;document.getElementById('report-date-to').value=to;}
+  };
+
+  window.generateReport = () => {
+    const from=document.getElementById('report-date-from').value; const to=document.getElementById('report-date-to').value; const accId=document.getElementById('report-account').value;
+    let txs=[...transactions]; if(from)txs=txs.filter(t=>t.date>=from); if(to)txs=txs.filter(t=>t.date<=to); if(accId)txs=txs.filter(t=>t.bankId===accId); txs.sort((a,b)=>a.date.localeCompare(b.date));
+    const totalIncome=txs.filter(t=>t.type==='income').reduce((s,t)=>s+t.amount,0); const totalExpense=txs.filter(t=>t.type==='expense').reduce((s,t)=>s+t.amount,0);
+    const bankBalances={}; banks.forEach(b=>{bankBalances[b.id]=b.opening||0;});
+    [...transactions].sort((a,b)=>a.date.localeCompare(b.date)).filter(t=>from?t.date<from:false).forEach(t=>{if(bankBalances[t.bankId]===undefined)bankBalances[t.bankId]=0;bankBalances[t.bankId]+=t.type==='income'?t.amount:-t.amount;});
+    document.getElementById('report-title').textContent=`Report: ${from||'All'} to ${to||'All'}`;
+    document.getElementById('report-summary-badges').innerHTML=`<span class="badge badge-green">Income: ${fmt(totalIncome)}</span><span class="badge badge-red">Expense: ${fmt(totalExpense)}</span>`;
+    const tbody=document.getElementById('report-tbody'); const tfoot=document.getElementById('report-tfoot'); const empty=document.getElementById('report-empty');
+    if(!txs.length){tbody.innerHTML='';tfoot.innerHTML='';empty.style.display='block';document.getElementById('report-table').style.display='none';}
+    else {
+      empty.style.display='none'; document.getElementById('report-table').style.display='table';
+      tbody.innerHTML=txs.map(t=>{if(bankBalances[t.bankId]===undefined)bankBalances[t.bankId]=0;bankBalances[t.bankId]+=t.type==='income'?t.amount:-t.amount;const bal=bankBalances[t.bankId];return`<tr><td>${t.date}</td><td>${t.bankName||''}</td><td><span class="tag tag-${t.type}">${t.type}</span></td><td>${t.narration}</td><td class="${t.type}-cell">${t.type==='income'?'+':'-'}${fmt(t.amount)}</td><td style="font-family:'DM Mono',monospace;color:${bal>=0?'var(--success)':'var(--danger)'};">${fmt(bal)}</td></tr>`;}).join('');
+      tfoot.innerHTML=`<tr><td colspan="4"><strong>Totals</strong></td><td><span style="color:var(--success)">${fmt(totalIncome)}</span> / <span style="color:var(--danger)">${fmt(totalExpense)}</span></td><td style="color:${totalIncome-totalExpense>=0?'var(--success)':'var(--danger)'};">${fmt(totalIncome-totalExpense)}</td></tr>`;
+    }
+  };
+
+  window.downloadReport = () => {
+    const from=document.getElementById('report-date-from').value; const to=document.getElementById('report-date-to').value; const accId=document.getElementById('report-account').value;
+    let txs=[...transactions]; if(from)txs=txs.filter(t=>t.date>=from); if(to)txs=txs.filter(t=>t.date<=to); if(accId)txs=txs.filter(t=>t.bankId===accId); txs.sort((a,b)=>a.date.localeCompare(b.date));
+    if(!txs.length){toast('No data to download','error');return;}
+    const rows=[['Date','Account','Type','Category','Narration','Amount'],...txs.map(t=>[t.date,t.bankName||'',t.type,t.category||'',`"${t.narration}"`,t.amount])];
+    const csv=rows.map(r=>r.join(',')).join('\n'); const blob=new Blob([csv],{type:'text/csv'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=`wealthwise-report-${from||'all'}-to-${to||'all'}.csv`; a.click(); toast('Report downloaded!');
+  };
+
+  window.toggleSidebar = () => { document.getElementById('sidebar').classList.toggle('open'); document.getElementById('sidebar-overlay').classList.toggle('visible'); };
+  window.closeSidebar = () => { document.getElementById('sidebar').classList.remove('open'); document.getElementById('sidebar-overlay').classList.remove('visible'); };
+
+  const setTodayDate = () => { document.getElementById('today-date').textContent = new Date().toLocaleDateString('en-NG',{weekday:'short',day:'numeric',month:'short',year:'numeric'}); };
+
+  setTimeout(()=>{ updateReportDates(); if(document.getElementById('budget-items-form')?.children.length===0) addBudgetItemRow(); }, 500);
+</script>
+</body>
+</html>
